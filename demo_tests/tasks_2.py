@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.service import Service
 class MainTests(unittest.TestCase):
     @classmethod
     def setUpClass(self):
-        self.service = Service('/Users/martarakowska/Desktop/TestFiles/chromedriver')
+        self.service = Service('/Users/martarakowska/Desktop/podstawy_testow_automatycznych_w_selenium_i_python/chromedriver')
         self.service.start()
         self.driver = webdriver.Remote(self.service.service_url)
 
